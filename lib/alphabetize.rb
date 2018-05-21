@@ -5,8 +5,7 @@ def alphabetize(arr)
   esp_alphabet = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
 
   arr.sort_by {
-    |phrase| puts "phrase = #{phrase}"
-    phrase.split('').map{|letter| esp_alphabet.index(letter)}
+    |phrase| phrase.split('').map{|letter| esp_alphabet.index(letter)}
   }
 
 end
